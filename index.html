@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Level Three Barbería · Reservas</title>
+<meta name="description" content="Reserva tu corte en Level Three Barbería: fade, clásico, barba, videojuegos y cerveza fría.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header><svg class="logo" viewBox="0 0 600 320" role="img" aria-label="Level Three Barbería"><defs><linearGradient id="sv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f7"/><stop offset=".55" stop-color="#c3c8cb"/><stop offset="1" stop-color="#9aa0a4"/></linearGradient></defs><text transform="translate(300,160) scale(-1,1)" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="190" font-weight="700" fill="url(#sv)">K</text><text x="72" y="248" textLength="378" lengthAdjust="spacing" font-family="Georgia,'Times New Roman',serif" font-size="46" font-weight="700" fill="url(#sv)">LEVEL THR</text><g fill="url(#sv)"><rect x="462" y="215" width="34" height="8"/><rect x="462" y="228" width="34" height="8"/><rect x="462" y="241" width="34" height="8"/><rect x="506" y="215" width="34" height="8"/><rect x="506" y="228" width="34" height="8"/><rect x="506" y="241" width="34" height="8"/><rect x="70" y="284" width="160" height="3"/><rect x="370" y="284" width="160" height="3"/></g><text x="300" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" letter-spacing="7" fill="url(#sv)">BARBERÍA</text></svg></header>
+<nav id="nav">
+<button data-t="inicio" class="on"><i>🏠</i>Inicio</button>
+<button data-t="reservar"><i>📅</i>Reservar</button>
+<button data-t="galeria"><i>✂️</i>Cortes</button>
+<button data-t="local"><i>🎮</i>Local</button>
+<button data-t="mis"><i>🧾</i>Mis citas</button>
+</nav>
+<main>
+<section id="inicio" class="on">
+<div class="hero"><div class="hl" id="hl" aria-label="Cortes de otro nivel"></div><p class="sub">Tu estilo, nivel tres. Reserva en menos de un minuto.</p><button class="cta" data-go="reservar">Reservar mi cita</button></div>
+<div class="mq"><div class="mqt" id="mq"></div></div>
+<h2>Explora</h2><div class="tiles" id="tiles"></div>
+<h2>Estilos que trabajamos</h2><div class="slide" id="slide"></div>
+</section>
+
+<section id="reservar">
+<div id="err" class="msg bad" hidden></div>
+<h2>1. Elige tu servicio</h2><div class="grid" id="svc"></div>
+<h2>2. Extras (opcional)</h2><div class="grid" id="ext"></div>
+<h2>3. Elige tu barbero</h2><div class="chips" id="brb"></div>
+<h2>4. Elige el día</h2><div class="chips" id="days"></div>
+<h2>5. Elige la hora</h2><div class="times" id="times"><span class="mu">Primero elige un día.</span></div>
+<h2>6. Tus datos</h2>
+<input id="nm" placeholder="Tu nombre" autocomplete="name" maxlength="60">
+<input id="ph" placeholder="Tu celular" inputmode="tel" autocomplete="tel" maxlength="20">
+<input id="nt" placeholder="¿Algún detalle o referencia del corte? (opcional)" maxlength="120">
+<div id="sum" class="msg" hidden></div>
+<button class="cta" id="go">Confirmar reserva</button>
+<div id="res"></div>
+</section>
+
+<section id="precios"><h2>Servicios y precios</h2><div id="plist"></div><p class="mu">Precios en pesos colombianos.</p></section>
+
+<section id="galeria"><h2>Nuestros cortes</h2><p class="mu">Toca un estilo y lo pasamos a tu reserva.</p><div class="gal" id="glist"></div></section>
+
+<section id="promos"><h2>Promociones</h2><div id="plst"></div><p class="mu">Menciona la promo al llegar al local.</p></section>
+
+<section id="local">
+<h2>Sala de espera</h2>
+<div class="card" style="cursor:default"><b>🎮 Videojuegos</b><span>Mientras esperas tu turno, juega en nuestra sala con consolas y videojuegos.</span></div>
+<h2>Cervezas y bebidas</h2>
+<div class="beers" id="bev"></div>
+<p class="mu">Pregunta en el local por precios y otras opciones.</p>
+<h2>Horario y contacto</h2><div id="info"></div>
+</section>
+
+<section id="resenas"><h2>Lo que dicen nuestros clientes</h2><div id="rsum"></div>
+<h2>Deja tu reseña</h2><input id="rnm" placeholder="Tu nombre" maxlength="40"><div class="chips" id="rst" style="margin-bottom:8px"></div><input id="rtx" placeholder="Cuéntanos tu experiencia" maxlength="200"><button class="cta" id="rgo">Publicar reseña</button><p class="mu" id="rmsg"></p><div id="rlist"></div></section>
+
+<section id="mis"><h2>Mis reservas</h2><div id="loy"></div><div id="mine"></div></section>
+</main>
+<script src="/js/app.js" defer></script>
+</body>
+</html>

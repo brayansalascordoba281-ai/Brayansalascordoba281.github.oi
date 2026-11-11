@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Panel · Level Three Barbería</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header><svg class="logo" viewBox="0 0 600 320" role="img" aria-label="Level Three Barbería"><defs><linearGradient id="sv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f7"/><stop offset=".55" stop-color="#c3c8cb"/><stop offset="1" stop-color="#9aa0a4"/></linearGradient></defs><text transform="translate(300,160) scale(-1,1)" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="190" font-weight="700" fill="url(#sv)">K</text><text x="72" y="248" textLength="378" lengthAdjust="spacing" font-family="Georgia,'Times New Roman',serif" font-size="46" font-weight="700" fill="url(#sv)">LEVEL THR</text><g fill="url(#sv)"><rect x="462" y="215" width="34" height="8"/><rect x="462" y="228" width="34" height="8"/><rect x="462" y="241" width="34" height="8"/><rect x="506" y="215" width="34" height="8"/><rect x="506" y="228" width="34" height="8"/><rect x="506" y="241" width="34" height="8"/><rect x="70" y="284" width="160" height="3"/><rect x="370" y="284" width="160" height="3"/></g><text x="300" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" letter-spacing="7" fill="url(#sv)">BARBERÍA</text></svg></header>
+<main style="padding-bottom:40px">
+<div id="login" hidden>
+<h2>Panel del administrador</h2>
+<input id="pw" type="password" placeholder="Clave de administrador" autocomplete="current-password">
+<button class="cta" id="lgo">Entrar</button>
+<p class="mu" id="lmsg"></p>
+<p><a class="lnk" href="/">← Ver página de clientes</a></p>
+</div>
+<div id="app" hidden>
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:10px">
+<a class="lnk" href="/">← Página de clientes</a><button class="lnk" id="out" style="background:none;cursor:pointer">Cerrar sesión</button></div>
+<div class="chips" id="tabs" style="margin-top:12px"></div>
+<div id="view"></div>
+</div>
+</main>
+<script src="/js/admin.js" defer></script>
+</body>
+</html>
